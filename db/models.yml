@@ -1,3 +1,9 @@
+Textbook
+  name: text
+  photo_url: text
+  price: integer
+
+
 # Example:
 #
 # Book
