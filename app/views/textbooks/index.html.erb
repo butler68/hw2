@@ -1,23 +1,18 @@
-<h1>Law Textbooks for Sale</h1>
-
-<%= Textbook.all.inspect %>
-
 <ul>
 <% for textbook in Textbook.all %>
   <li>
     <%= textbook.name %>
   </li>
+  
   <li>
-    <%= textbook.price %>
+  $<%= textbook.price %> obo
   </li>
+  
+   <li>
+      <img width="350"
+    src="<%= textbook.photo_url %>">
+  </li>
+  <br>
+  <br>
 <% end %>
 </ul>
-
-<% for textbook in Textbook.all %>
-  <li>
-    <img src="<%= textbook.photo_url %>">
-  </li>
-<% end %>
-</ul>
-
-<p>To modify this page, edit the template at <code>app/views/textbooks/index.html.erb</p>
